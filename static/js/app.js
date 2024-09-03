@@ -8,17 +8,18 @@ function buildMetadata(sample) {
     // Filter the metadata for the object with the desired sample number
 
     let result = metadata.filter(sampleObj => sampleObj.id == sample)[0];
-
+    console.log("Result", result);
     // Use d3 to select the panel with id of `#sample-metadata`
     let panel = d3.select("#sample-metadata");
 
     // Use `.html("") to clear any existing metadata
 
     panel.html("")
+
     // Inside a loop, you will need to use d3 to append new
    
     // tags for each key-value in the filtered metadata.
-    Object.entries(result).forEach(([key, value]) => {
+    Object.entries(result).forEach(([key, value]) => { // is a method that returns an array of a given object's own enumerable string-keyed property [key, value] pairs
       panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
     });
 
@@ -108,7 +109,7 @@ function init() {
 
     // Use the list of sample names to populate the select options
     names.forEach((name) => {
-      dropdown.append("option").text(name).property("value", name);
+      dropdown.append("option").text(name).property("value", name); //An option element in HTML represents an item in a dropdown list.
     });
 
     // Hint: Inside a loop, you will need to use d3 to append a new
@@ -129,7 +130,7 @@ function init() {
 // Function for event listener
 function optionChanged(newSample) {
   // Build charts and metadata panel each time a new sample is selected
-    console.log("New Sample:", newSample);
+    console.log("New Sample Option Created", newSample);
     buildCharts(newSample);
     buildMetadata(newSample);
 }
