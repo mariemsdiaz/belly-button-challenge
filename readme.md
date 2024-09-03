@@ -8,6 +8,9 @@ We first begin by extracting the metadata from the json file provided with the i
 
 With our data extracted and organized, we can now build a function called buildCharts to create bar and bubble chart visualizations for each sample. We start by defining traces based on the "samples" field, which includes labels, IDs, and values. Once the traces are set up, we customize the layout of the charts. Finally, we use the Plotly library to render both charts. Plotly allows us to customize our plots in many creative and visually engaging ways.
 
+![Dashboard Screenshot](https://github.com/mariemsdiaz/belly-button-challenge/blob/main/dashboard.png)
+
+
 ## Dropdown and Option Selection
 
 We complete our dashboard setup with the init function, which initializes the state of the dashboard. In this function, we:
