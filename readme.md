@@ -28,7 +28,7 @@ This setup enables users to interact with the dashboard by selecting different s
 
 This assigment was completed with the help of tutors, chatGPT, and referencing past class activities. I also, used chatGPT to edit my HTML and customize color and headers. 
 
-For a complete review of this dashboad please visit GitHub Pages ![Here] https://mariemsdiaz.github.io/belly-button-challenge/
+For a complete review of this dashboad please visit GitHub Pages [here] https://mariemsdiaz.github.io/belly-button-challenge/
 
 
 
